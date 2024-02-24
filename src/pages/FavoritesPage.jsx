@@ -15,14 +15,14 @@ const FavoritesPage = () => {
   const onClickBtnError = () => navigate('/catalog');  
    
   return (
-    <>
+    <div style={{marginTop: '30px'}}>
       {cars.length === 0
         ? <ErrorDisplay messageError={messageError} onButtonClick={onClickBtnError} buttonLabel={btnErrorLabel} showButton={true} />
         : <>
           <CarsGrid cars={cars} />
         </>
       }
-    </>
+    </div>
   );
 };
 
