@@ -37,6 +37,7 @@ const Layout = () => {
             : <Outlet />
           }
         </Suspense>
+        <div id="modal-card-car"></div>
       </Main>
     </>
   );
